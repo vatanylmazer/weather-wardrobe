@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Wardrobe - Hava Durumu & Kıyafet Asistanı</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌤️ Weather Wardrobe</h1>
+        <p class="subtitle">Hava durumuna göre ne giyeceğini kara kara düşünme!</p>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Şehir adı yaz (Örn: Ankara)...">
+            <button id="searchBtn">Kontrol Et</button>
+        </div>
+
+        <div id="resultContainer" class="hidden">
+            <div class="weather-info">
+                <h2 id="cityName">-</h2>
+                <div class="temp-box">
+                    <span id="temp">--</span>°C
+                </div>
+                <p id="condition">-</p>
+            </div>
+
+            <div class="suggestion-box">
+                <h3>💡 Kıyafet & Kombin Önerin:</h3>
+                <p id="advice">-</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
